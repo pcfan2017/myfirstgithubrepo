@@ -1,0 +1,64 @@
+login info: pcfan2017@gmail.com / Dxxxxxxxx@
+Username: pcfan2017
+
+
+git config --global user.name "John Lee"
+git config --global user.email pcfan2017@gamil.com
+git config --global init.default branch main
+git help config
+
+
+git init  (Initialized empty Git repository in C:/Users/Bin.Li/OneDrive - Putnam County Government/Documents/(PUBLIC) 200-301 Course Files/.git/)
+git status (show branch and etc)
+git add .  (track all the files)
+
+$ git rm --cached Day\ 50\ Flashcards\ -\ DHCP\ Snooping.apkg (remove one tracked file)
+rm 'Day 50 Flashcards - DHCP Snooping.apkg'
+$ git rm --cached *.apkg
+rm 'Day 01 Flashcards - Network Devices.apkg'
+rm 'Day 02 Flashcards - Interfaces and Cables.apkg'
+rm 'Day 03 Flashcards - OSI Model, TCP_IP Suite.apkg'
+rm 'Day 04 Flashcards - Intro to the CLI.apkg'
+rm 'Day 05 Flashcards - Ethernet LAN Switching Part 1.apkg'
+rm 'Day 06 Flashcards - Ethernet LAN Switching Part 2.apkg'
+rm 'Day 07 Flashcards - IPv4 Addresses Part 1.apkg'
+rm 'Day 08 Flashcards - IPv4 Addresses Part 2.apkg'
+rm 'Day 09 Flashcards - Switch Interfaces.apkg'
+rm 'Day 10 Flashcards - IPv4 Header.apkg'
+
+
+git commit -m "first commit - commiting all files to the repository" (It is like write a page in history book)
+$ git commit -m "first commit - commiting all files to the repository"
+[master (root-commit) 2832e3d] first commit - commiting all files to the repository
+ 49 files changed, 2 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Day 01 Lab - Packet Tracer Introduction.pkt
+ create mode 100644 Day 02 Lab - Connecting Devices.pkt
+ create mode 100644 Day 03 Lab - OSI Model.pkt
+ create mode 100644 Day 04 Lab - Basic Device Security.pkt
+ create mode 100644 Day 06 Lab - Ethernet LAN Switching.pkt
+ create mode 100644 Day 08 Lab - IPv4 Addresses.pkt
+ create mode 100644 Day 09 Lab - Interface Configuration.pkt
+ create mode 100644 Day 11 Lab - Configuring Static Routes.pkt
+ create mode 100644 Day 11 Lab - Troubleshooting Static Routes.pkt
+ create mode 100644 Day 12 Lab - Life of a Packet.pkt
+ create mode 100644 Day 15 Lab - VLSM.pkt
+ create mode 100644 Day 16 Lab - VLANs Part 1.pkt
+
+git diff
+git add index.htm
+git restore --staged index.htm
+git commit -a -m "updated text to free range"
+git rm "filename"
+git restore "filename"
+git mv "old filename" "new filename"
+git commit -m "changed the file name of an image"
+git log
+git log --oneline
+git commit -m "changed all the files" --amend
+git log -p
+
+
+git remote add origin https://github.com/pcfan2017/myfirstgithubrepo.git
+git branch -M main
+git push -u origin main
